@@ -3,19 +3,23 @@ import numberRandom from './randomnumber.js';
 import champ from './champ.js';
 import computer from './array.js';
 import objectoClone from './object.js';
+import priceFilter from './mapandfilter.js';
+import priceMap from './mapandfilter.js';
 
-fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
-  .then((response) => response.json())
-  .then((jsonX) => console.log(jsonX));
+console.log(priceMap);
 
-async function pokemonURL() {
-  const pokemonFetch = await fetch(
-    'https://pokeapi.co/api/v2/pokemon?limit=151',
-  );
-  const pokemonResponse = await pokemonFetch.json();
-  return pokemonResponse;
-}
-console.log(pokemonURL());
+// fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+//   .then((response) => response.json())
+//   .then((jsonX) => console.log(jsonX));
+
+// async function pokemonURL() {
+//   const pokemonFetch = await fetch(
+//     'https://pokeapi.co/api/v2/pokemon?limit=151',
+//   );
+//   const pokemonResponse = await pokemonFetch.json();
+//   return pokemonResponse;
+// }
+// console.log(pokemonURL());
 
 // console.log(objectoClone.couple());
 // console.log(computer.name.concat(computer.price).concat(computer.condition));
